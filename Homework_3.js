@@ -23,18 +23,18 @@ function strAndArr(str, arr){
 // --- Problem 2 ---
 
 function numberArr(arr){
-let newArr = [];
+	let newArr = [];
 
-for (let i = arr.length-1; i>=0; i--){
-	if(typeof arr[i] === "number"){
-		if(arr[i]%2 == 1){
-			newArr.unshift(arr[i]);
-		}else{
-			newArr.push(arr[i]);
+	for (let i = arr.length-1; i>=0; i--){
+		if(typeof arr[i] === "number"){
+			if(arr[i]%2 == 1){
+				newArr.unshift(arr[i]);
+			}else{
+				newArr.push(arr[i]);
+			}
 		}
 	}
-}
-console.log(newArr)
+	console.log(newArr)
 }
 
 // numberArr([8, 0, 1, "hey", 12, 5, true, "2", null, 7, 3])
